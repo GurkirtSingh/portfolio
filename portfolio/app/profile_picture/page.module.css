@@ -1,0 +1,19 @@
+.picframe{
+    width: 200px;
+    height: 200px;
+    background: white;
+    border: 2px solid black;
+    position: relative;
+}
+
+.picframe::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: black;
+    z-index: -1;
+    transform: translate(5px, 5px);
+}
