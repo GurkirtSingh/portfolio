@@ -1,0 +1,54 @@
+.navframe{
+    width: 90vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.navlinks{
+    color: black;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.resumeBtn{
+    position: relative;
+    width: 7vw;
+    height: 5vh;
+    border: 2px solid black;
+    border-radius: 12px;
+    background: white;
+}
+.resumeBtn::before{
+    z-index: -1;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    background: black;
+    transform: translate(5px, 5px);
+}
+
+.resumeBtn:active::before{
+    background-color: white;
+    transform: translate(0);
+}
+.resumeBtn:active{
+    transform: translate(5px, 5px);
+    transition: transform .1s ease;
+}
+.resumeBtn:hover{
+    cursor: pointer;
+}
+
+.navlink, .navlink:active, .navlink:visited, .navlink:hover{
+    text-decoration: none;
+    color: black;
+}
