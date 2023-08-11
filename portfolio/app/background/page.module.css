@@ -1,0 +1,50 @@
+
+.frame{
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(215, 215, 215, 0.58);
+    filter: blur(151px);
+}
+.shape1{
+    transform: translate(-10vw, 0);
+    animation: shape1Transform 30s infinite ease-in-out;
+}
+.shape2{
+    transform: translate(100vw, -10vh);
+    animation: shape2Transform 30s infinite ease-in-out;
+}
+.shape3{
+    transform: translate(100vw, 80vh);
+    animation: shape3Transform 30s infinite ease-in-out;
+}
+.shape4{
+    transform: translate(-50vw, 80vh);
+    animation: shape4Transform 30s infinite ease-in-out;
+    
+}
+
+/* Keyframes */
+
+@keyframes shape1Transform {
+    50%{
+        transform: translate(40vw, 30vh);
+    }
+}
+@keyframes shape2Transform {
+    50%{
+        transform: translate(10vw, 50vh);
+    }
+}
+@keyframes shape3Transform {
+    50%{
+        transform: translate(20vw, 20vh);
+    }
+}
+@keyframes shape4Transform {
+    50%{
+        transform: translate(80vw, 20vh);
+    }
+}
+
